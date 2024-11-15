@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">          
+    <!-- Ajusta el ancho del sitio web al ancho del dispositivo para mejorar la visualización en dispositivos móviles. -->
+    <title>StudyMark</title>
+    <link rel="icon" href="https://github.com/geovany44/tallerconSara/blob/main/IMG/logo2.png?raw=trueg" type="image/x-icon">
+    <link rel="stylesheet" href="trabajofinal.css"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script> -->
+              
+    <!-- Vincula la hoja de estilos CSS-->
+</head>
+<body>
+    <header id="intro"  class="header">          
+        <!-- Encabezado principal de la página. -->
+        <div class="menu container">
+            <a href="#" class="logo">StudyMark</a>
+            <input type="checkbox" id="menu" />          
+            <!-- Input tipo checkbox para manejar el menú desplegable en versiones móviles. -->
+            <label for="menu">
+                <img src="https://github.com/geovany44/tallerconSara/blob/main/IMG/images/menu.png?raw=true" class="menu-icono">
+            </label>
+            
+            <nav class="navbar">          
+                <!-- Barra de navegación principal. -->
+                <ul>
+                    <!-- Lista de elementos de navegación. -->
+                    <li><a href="#intro">Inicio</a></li>
+                    <li><a href="#ofert">Ofertas</a></li>
+                    <li><a href="#product">Productos</a></li>
+                    <li><a href="#nosotros">Sobre Nosotros</a></li>
+                </ul>
+            </nav> 
+
+            <div>
+                <ul>
+                    <li class="submenu">
+                         <!-- Sección del carrito de compras en el menú. -->
+                        <img src="https://raw.githubusercontent.com/geovany44/tallerconSara/e00d3aca5f2f69f1f9f04e457d2a65d8b7815896/IMG/images/car.svg" id="img-carrito" alt="carrito">
+                        <div id="carrito">
+                            <!-- Contenedor para la lista de productos en el carrito. -->
+                            <table id="lista-carrito">
+                                <thead>
+                                   <tr>
+                                    <th>Imagen</th>
+                                    <th>Nombre</th>
+                                    <th>Precio</th>
+                                    <th></th>
+                                   </tr> 
+                                </thead>
+                                <tbody></tbody>
+                                <!-- El tbody se rellenará con productos dinámicamente. -->
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="btn-2">vaciar carrito</a>
+                            <a href="#" id="comprar" class="btn-2">comprar</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="header-content container">
+            <!-- Contenedor de contenido principal del encabezado. -->
+            <div class="header-img">
+                <img src="https://github.com/geovany44/tallerconSara/blob/main/IMG/logo2.png?raw=trueg" alt="">
+            </div>
+            <div class="header-txt">
+                <h1>ofertas especiales</h1>
+                <p>lo mejor en utiles escolares</p>
+                <a href="#" class="btn-1">Información</a>
+            </div>
+        </div>
+    </header>
+    <section id="ofert" class="ofert container">
+        <!-- Sección de ofertas destacadas. -->
+        <div class="ofert-1">
+            <div class="ofert-img">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_740492-MCO73331573982_122023-O.webp" alt="">
+            </div>
+            <div class="ofert-txt">
+                <h3>combo incio de clases</h3>
+                <a href="#" class="btn-2">Información</a>
+            </div>
+        </div>
+
+        <div class="ofert-1">
+            <div class="ofert-img">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_832862-MCO48701875647_122021-O.webp" alt="">
+            </div>
+            <div class="ofert-txt">
+                <h3>kit basico escolar</h3>
+                <a href="#" class="btn-2">Información</a>
+            </div>
+        </div>
+
+        <div class="ofert-1">
+            <div class="ofert-img">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_693268-MCO50612390950_072022-O.webp" alt="">
+            </div>
+            <div class="ofert-txt">
+                <h3>promo escolar</h3>
+                <a href="#" class="btn-2">Información</a>
+            </div>
+        </div>
+    </section>
+
+    <main class="products container" id="lista-1">
+          <!-- Sección principal para la lista de productos. -->
+        <h2>productos</h2>
+        <div id="product" class="product-content">
+            <!-- Contenedor para cada producto. -->
+            <div class="product">
+                <img src="https://www.mercatus9.com/web/image/product.template/7990/image_1024?unique=4dbd334" alt="">
+                <div class="product-txt">
+                    <h3>CUADERNOS </h3>
+                    <p>Calidad Premium X Und.</p>
+                    <p class="precio">$3.500</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="1"> Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="https://www.pelikan.com/images/PelikanMX/Productos/Escolar/Compasses/Compassprecision/Ourline/15540200_Compas_escolar_plastico.png" alt="">
+                <div class="product-txt">
+                    <h3>compas</h3>
+                    <p>Calidad Estandar X Und.</p>
+                    <p class="precio">$6.500</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="2"> Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="https://images.rappi.pe/products/1646245069658_1646245063951.png?e=webp&q=80&d=130x130" alt="">
+                <div class="product-txt">
+                    <h3>tijeras</h3>
+                    <p>Marca Vinifan X Und.</p>
+                    <p class="precio">$2.500</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="3"> Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="https://lumen.com.mx/Content/images/productPics_180x180/238763.jpg?v=1" alt="">
+                <div class="product-txt">
+                    <h3>marcadores</h3>
+                    <p>Marca Sharpie X 24Und.</p>
+                    <p class="precio">$40.000</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="4"> Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="https://images.rappi.pe/products/1682499897632_1682499895784_1682499894596.jpg?e=webp&q=80&d=130x130" alt="">
+                <div class="product-txt">
+                    <h3>Caja de colores</h3>
+                    <p>Marca Faber Castell X 12Und.</p>
+                    <p class="precio">$30.500</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="5"> Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="https://lns.com.ec/web/image/product.template/1301/image_256/%5B7861098331857%5D%20GOMA%20ESTILO%20KIDS%20250GR?unique=326a995" alt="">
+                <div class="product-txt">
+                    <h3>colbon</h3>
+                    <p>Calidad Estandar</p>
+                    <p class="precio">$2.500</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="6"> Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="https://images.pricely.ar/images/1/70330533486.jpg" alt="">
+                <div class="product-txt">
+                    <h3>Caja de lapiceros</h3>
+                    <p>Calidad Premium X 12Und.</p>
+                    <p class="precio">$8.500</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="7"> Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0lpK6tzbJC57VfwkmdbZeoGg5W7K4VL1IFQ&s" alt="">
+                <div class="product-txt">
+                    <h3>Temperas</h3>
+                    <p>Alta Pigmentacion x 12und.</p>
+                    <p class="precio">$5.000</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="8"> agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="https://tottoco.vtexassets.com/arquivos/ids/556599/MA04ADE001-24100-P56_1.jpg?v=638471451243570000" alt="">
+                <div class="product-txt">
+                    <h3>morral</h3>
+                    <p>Morral para dama-Totto</p>
+                    <p class="precio">$85.000</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="9"> Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="https://http2.mlstatic.com/D_NQ_986452-MLU73268252664_122023-V.webp" alt="">
+                <div class="product-txt">
+                    <h3>morral</h3>
+                    <p>Morral para hombre-Totto</p>
+                    <p class="precio">$85.000</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="10"> Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="https://papelesprimavera.vteximg.com.br/arquivos/ids/181241-600-600/set-geometria-flexible-grande-verde-primavera-2120_019_008.jpg?v=638067564998770000" alt="">
+                <div class="product-txt">
+                    <h3>juego geometrico</h3>
+                    <p>Marca Primavera x 4Und.</p>
+                    <p class="precio">$10.000</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="11"> Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="https://www.grafiques74.com/88469-home_default/pack-20-carpetas-exacompta-iderama-con-gomas-2-anillas-15mm.jpg" alt="">
+                <div class="product-txt">
+                    <h3>folder multitareas</h3>
+                    <p>8,5 x 14 pulgadas</p>
+                    <p class="precio">$6.000</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="12"> Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjw2e1cPFV2rRvo3vP-SwFZPknEeKA8fdbQaHClaR7IbPGx7S2d2yIAEdp-F8WjqIrVL0&usqp=CAU" alt="">
+                <div class="product-txt">
+                    <h3>cartulina bristol</h3>
+                    <p>Tonalidad pastel paq X 10Und.</p>
+                    <p class="precio">$1.200</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="13"> Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="https://papelesprimavera.vteximg.com.br/arquivos/ids/202759-600-600/846_019.jpg?v=638418014586530000" alt="">
+                <div class="product-txt">
+                    <h3>Borradores</h3>
+                    <p>Primavera x 4Und.</p>
+                    <p class="precio">$4.000</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="14"> Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="https://www.framapl.es/tbfth.php?w=256&h=256&src=https://www.starplus.es/media/images/fotosMR/MIL4701116_2.jpg" alt="">
+                <div class="product-txt">
+                    <h3>sacapuntas</h3>
+                    <p>Marca Milan X Und.</p>
+                    <p class="precio">$3.500</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="15"> Agregar al carrito</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section id="nosotros"  class="icons container">
+         <!-- Sección para iconos destacados o características del servicio. --> 
+        <div class="icon-1">
+            <div class="icon-img">
+                <img src="https://cdn-icons-png.flaticon.com/256/208/208047.png" alt="">
+            </div>
+            <div class="icon-txt">
+                <h3>productos de la mas alta calidad a precios increibles </h3>
+                <p>
+                 Conoce mas de nuestros productos y servicios...
+                </p>
+            </div>
+        </div>
+
+        <div class="icon-1">
+            <div class="icon-img">
+                <img src="https://images.vexels.com/media/users/3/138665/isolated/lists/7fb3900892f30b08fe778755b427df48-tijeras-de-corte-escolar.png" alt="">
+            </div>
+            <div class="icon-txt">
+                <h3>¡Estamos comprometidos! </h3>
+                <p>
+                 StudyMark se compromete a brindarte una experiencia increible de la mano de la puntualidad y la empatia.
+                </p>
+            </div>
+        </div>
+
+        <div class="icon-1">
+            <div class="icon-img">
+                <img src="https://tauro.com.co/wp-content/uploads/2023/09/escolar.png" alt="">
+            </div>
+            <div class="icon-txt">
+                <h3>¡conoce nuestras ofertas! </h3>
+                <p>
+                 En StudyMark ofrecemos semanalmente descuentos y promos increibles, no te las pierdas!
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="blog container">
+<!-- Sección de informacion -->
+        <div class="blog-1">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_s-e3Q3s-360jOp80Su1qQek9evGF1axMcQ&s" alt="">
+            <h3>contacto</h3>
+            <p>
+                Correo electronico: studymark.oficial@gmail.com
+            <ul>
+                Telefono: 227-032-986
+            <ul>
+                Celular: 3127957127
+                Copyrighth@2024 StudyMark Colombia LTDA.
+            </p>
+        </div>
+
+        <div class="blog-1">
+            <img src="https://github.com/geovany44/tallerconSara/blob/main/IMG/logo2.png?raw=trueg" alt="">
+            <h3>"Todo lo que necesitas para estudiar en un solo lugar"</h3>
+            <p>
+            </p>
+        </div>
+
+        <div class="blog-1">
+            <img src="https://cdn-icons-png.flaticon.com/256/9416/9416798.png" alt="">
+            <h3></h3>
+            <p>
+                Somos una tienda en línea dedicada a ofrecer productos estudiantiles de alta calidad y accesibles para facilitar tu vida académica, en StudyMark seleccionamos cuidadosamente cada artículo para que puedas enfocarte en lo que realmente importa.
+            </p>
+        </div>
+
+    </section>
+
+    <h2 id="contactanos">Contactanos</h2>
+
+    <form>
+        <div class="mb-3">
+            <label for="exampleName" class="form-label">Ingresa tu nombre</label>
+            <input type="text" class="form-control" placeholder="*" id="exampleInputPassword1">
+          </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Ingresa tu correo electronico</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="ejemplo@gmail.com" aria-describedby="emailHelp">
+        </div>
+        
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Acepto recibir ofertas</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+     
+    </div>
+
+
+    <footer class="footer">
+
+      
+
+
+  <!-- Pie de página del sitio web. -->
+        <div class="footer-content container">
+
+            <div class="link">
+                <h3>categorias</h3>
+                <ul>
+                    <li><a href="#">Escritura</a></li>
+                    <li><a href="#">Kits Escolares</a></li>
+                    <li><a href="#">Geometria</a></li>
+                    <li><a href="#">Cuadernos</a></li>
+                </ul>
+            </div>
+            
+            <div class="link">
+                <h3>DESTINOS</h3>
+                <ul>
+                    <li><a href="#">Colombia</a></li>
+                    <li><a href="#">Ecuador</a></li>
+                    <li><a href="#">Chile</a></li>
+                    <li><a href="#">Panama</a></li>
+                </ul>
+            </div>
+
+            <div class="link">
+                <h3>descuentos</h3>
+                <ul>
+                    <li><a href="#">Desde 5% 10 Und.</a></li>
+                    <li><a href="#">Desde 10% 15 Und.</a></li>
+                    <li><a href="#">Desde 15% 20 Und.</a></li>
+                    <li><a href="#">Desde 20% 25 Und.</a></li>
+                </ul>
+            </div>
+
+            <div class="link">
+                <h3>marcas</h3>
+                <ul>
+                    <li><a href="#">Primavera</a></li>
+                    <li><a href="#">Milan</a></li>
+                    <li><a href="#">Totto</a></li>
+                    <li><a href="#">Sharpie y Mucho mas...</a></li>
+                </ul>
+            </div>
+
+
+        </div>
+
+    </footer> 
+    <script src="java.js"></script>
+    <!-- Vincula el archivo de JavaScript para la interactividad. -->
+</body>
+</html>
